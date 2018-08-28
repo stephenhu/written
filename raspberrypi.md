@@ -9,20 +9,14 @@ requirement.
 
 ## scoreboard product
 
-for my use case, the scoreboard needs to be an asynchronous service that can support multiple client connections (long term) 
-with frequent reads and writes to control the score and game clock.  i originally thought about creating a mobile application that connects to a service in the cloud, 
-but for my digital scoreboard, i need millisecond accuracy, the lag over wan would be a non-starter, lan is tolerable, otherwise 
-the clock would look like it's jittery and jumping all over the place.  second, for mobile applications, a phone call or other 
-distraction would disrupt the service, remember this needs to be connected to an led monitor, you wouldn't want people to see your 
-private sms or facebook messages popping up as notifications in the middle of a game.  and lastly, running a service on a mobile phone 
-is not the right place, how would other clients connect to a device that's frequently wading through different ip addresses or 
-potentially using mobile networks?  on top of the service, i need a desktop environment that can display a browser.  the device also 
-needs to handle storage and playback of various media like high resolution video, audio, and photos.
+the scoreboard should leverage a commodity 4k tv for display, the bigger the better, a smartphone as a client controller, and some sort of service on the backend to manage state and persist data.  i initially planned on using an apple tv to wirelessly forward my mobile client's data to the tv, but found that a mobile app makes a bad backend service because a) a phone call or other 
+distraction could potentially disrupt the service  b) a device that's frequently wading through different ip addresses or 
+potentially using cellular networks would make it difficult for clients to connect consistently  c) apple tv would add to the cost and keep you stuck on apple's stack  d) you wouldn't want all your facebook and other private sms messages to pop up on the tv.  so the end decision was to employ a low-powered, small form factor server that could connect to any large 4k tv, this is when i decided to use a raspberry pi.
 
-to control the scoreboard service, i need a mobile application, iphone and android being the obvious platforms to support so
-the backend has to support both of these.  i developed a swift ios application initially and used an apple tv to airplay the
-content, but that would require an apple tv device which adds costs to the solution and would not allow me to support android clients
-in the future.
+the backend needs to support multiple client connections (long term) with frequent reads and writes, e.g. start clock, stop clock, increase away team points by 2, call timeout, increase total fouls, etc; there's typically one person controlling a clock, a different person managing the score.  i originally thought about hosting the backend in the cloud, but for my digital scoreboard, i need millisecond accuracy for the game clocks, the lag over wan would be a non-starter, otherwise the clock would look jittery jumping all over the place, e.g. from 4.6s to suddenly 5.2s, lan's latency is tolerable.  on top of the service, i need a desktop environment that can display a browser, my scoreboard will basically be a webpage that can be easily customized.  the device also needs to handle storage and playback of various media like high resolution video, audio, and photos.
+
+to control the scoreboard service, i need a smartphone app, iphone and android being the obvious platforms to support so
+the backend has to support both of these.
 
 ## hardware stack
 
@@ -40,7 +34,7 @@ bump up, wifi, bluetooth, cpu (quad core broadcom bcm2837b0, cortex-a53 (v8) 64-
 there are many other singleboard devices like raspberry pi, like the asus tinker board, orange pi, beagleboard, etc, and i think i heard 
 or read from some review that the raspberry pi is the lower end of the bunch in terms of performance (and price), especially i heard the 
 storage controller is a shared bus or some such which limits the throughput, you'll have to look this up on your own, but thus far, for
-my needs, things seem to work well.
+my needs, things seem to work well, note that i have not done extensive performance testing or the like yet.
 
 ## software stack
 
@@ -48,18 +42,18 @@ my needs, things seem to work well.
 
 in terms of operating systems, i've always liked using linux and the recommended system on raspberry pi is raspbian, this is 
 a debian based linux distribution, but its purpose is specifically to create a desktop environment for education, 
-programming, or general use, there were lots of applications like mathematica that just weren't needed, the size required 
-for install was over 4gb and the default window manager is something called pixel which stands for pi improved xwindows 
-environment lightweight which is based on [lxde](http://lxde.org).  note that there's also a window-less version of raspbian 
+programming, or general use, there were lots of applications like mathematica and libre ofice that just weren't needed, the size required 
+for install was over 4gb and the default window manager is something called pixel which stands for _pi improved xwindows 
+environment lightweight_ which is based on [lxde](http://lxde.org).  note that there's also a window-less version of raspbian 
 called raspbian lite, the total download size for this is around 325mb which is quite acceptable, from there you can add the 
 packages that you need.
 
 i tried ubuntu-mate which required 8g storage, though also debian based, but this seemed much more familiar to me, 
 it was running 16.04 LTS, mate (gnome 2) and the menus and everything seemed fairly familiar.
 
-i looked at ubuntu core, which is built for iot devices, but ubuntu core leverages docker which is just overkill for this
+regarding ubuntu core, which is built for iot devices, but ubuntu core leverages docker which is just overkill for this
 project, i'd need additional memory for the docker processes, and there is this whole thing about forcing you to create 
-docker images and put them up on some snap service which requires registration that just turned me off entirely.  i never 
+docker images and putting them up on some snap service which requires registration that just turned me off entirely.  i never 
 measured how much more resources i would need to run docker, but with 1g ram, it just didn't seem necessary, i'm not trying to deploy thousands or even hundreds of web applications, my stack is fairly opinionated, at most a couple processes, and they don't need runtimes to be installed like python or ruby, so this is just unnecessary cruft.  the ubuntu core itself is quite minimalized, but the deep, ingrained docker dependency is a non-starter for me.  i like the concept of a minimalized linux with just enough to run your workload, but i also need to load a window manager, xorg, browser, etc, so it's not only a headless setup. 
 
 i also looked at fedora atomic, this is similar to ubuntu core--in addition to docker, k8 is built in as well and seems to 
@@ -70,8 +64,7 @@ there are other distributions, like [diet pi](https://dietpi.com/), which is act
 too much work at this point, i just wanted to get my scoreboard up and running, maybe an exercise for later.  and [armbian](https://www.armbian.com/) deserves special mention, this is another minimalized linux for arm based on debian.  the other way to tighten up the install is to install something like ubuntu-mate and then work backwards and remove what you don't like, i think this method is like taking a step backwards because you're installing and then un-installing.
 
 the operating system image needs to be installed onto a microsd card, for me, my main development platform is a macbook pro 
-(usb-c) which doesn't have a microsd reader so i had to go purchase a usb to microsd dongle, it also happened to have ports 
-for memory stick, sd cards, and other card formats, i guess these are usually referred to as a multi-card reader.
+(usb-c) which doesn't have a microsd reader so i had to go purchase a usb to microsd dongle which is about the size of a usb thumb drive, it also happened to have ports for memory stick, sd cards, and other card formats, i guess these are usually referred to as a multi-card reader.
 
 # TODO: screenshot of multi-card reader
 
