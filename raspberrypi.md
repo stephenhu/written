@@ -51,14 +51,14 @@ packages that you need.
 i tried ubuntu-mate which required 8g storage, though also debian based, but this seemed much more familiar to me, 
 it was running 16.04 LTS, mate (gnome 2) and the menus and everything seemed fairly familiar.
 
-regarding ubuntu core, which is built for iot devices, but ubuntu core leverages docker which is just overkill for this
-project, i'd need additional memory for the docker processes, and there is this whole thing about forcing you to create 
-docker images and putting them up on some snap service which requires registration that just turned me off entirely.  i never 
+ubuntu core is built for iot devices which raspberry could be construed as, but ubuntu core leverages docker which is just overkill for this project, i'd need additional memory for the docker processes, and there is this whole thing about forcing you to create 
+docker images and putting them up on some ubuntu snap service which requires registration that just turned me off entirely.  i never 
 measured how much more resources i would need to run docker, but with 1g ram, it just didn't seem necessary, i'm not trying to deploy thousands or even hundreds of web applications, my stack is fairly opinionated, at most a couple processes, and they don't need runtimes to be installed like python or ruby, so this is just unnecessary cruft.  the ubuntu core itself is quite minimalized, but the deep, ingrained docker dependency is a non-starter for me.  i like the concept of a minimalized linux with just enough to run your workload, but i also need to load a window manager, xorg, browser, etc, so it's not only a headless setup. 
 
-i also looked at fedora atomic, this is similar to ubuntu core--in addition to docker, k8 is built in as well and seems to 
-serve as a way to build up kubernetes clusters.  microsoft has windows iot, but just the thought of having to develop on 
-windows and the potential licensing costs turned me off.
+fedora atomic is very similar to ubuntu core--in addition to docker, k8 is built in as well and seems to 
+serve as a way to build up kubernetes clusters.
+
+microsoft has windows iot, but just the thought of having to develop on windows and the potential licensing costs turned me off.
 
 there are other distributions, like [diet pi](https://dietpi.com/), which is actually a tool to help you build a customized linux for arm, but just 
 too much work at this point, i just wanted to get my scoreboard up and running, maybe an exercise for later.  and [armbian](https://www.armbian.com/) deserves special mention, this is another minimalized linux for arm based on debian.  the other way to tighten up the install is to install something like ubuntu-mate and then work backwards and remove what you don't like, i think this method is like taking a step backwards because you're installing and then un-installing.
