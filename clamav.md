@@ -50,3 +50,4 @@ make sure `LocalSocket /tmp/clamd.socket` and `LocalSocketMode 660` are uncommen
 * http://www.gctv.ne.jp/~yokota/clamav/#openssl
 * https://www.clamav.net/documents/installation-on-macos-mac-os-x#Users-and-on-user-privileges
 * https://www.clamav.net/documents/scanning#clamscan
+* https://www.devguerrilla.com/notes/2014/09/linux-speeding-up-clamav-with-clamd-on-rhel/
