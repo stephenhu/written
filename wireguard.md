@@ -83,6 +83,7 @@ _DO NOT USE THESE COMMANDS FOR NOW, I DON'T THINK THESE ARE THE RIGHT COMMANDS, 
 ## references
 
 * https://securityespresso.org/tutorials/2019/03/22/vpn-server-using-wireguard-on-ubuntu/  # top article
+* https://github.com/pirate/wireguard-docs
 * https://golb.hplar.ch/2018/10/wireguard-on-amazon-lightsail.html
 * https://www.ckn.io/blog/2017/11/14/wireguard-vpn-typical-setup/
 * https://research.kudelskisecurity.com/2017/06/07/installing-wireguard-the-modern-vpn/
