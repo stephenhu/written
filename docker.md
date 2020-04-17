@@ -40,6 +40,9 @@ sample docker-compose.yml file with traefik
 * https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/
 * https://blog.oddbit.com/post/2015-02-05-creating-minimal-docker-images/
 * https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html#environment-variables
+* https://blog.container-solutions.com/tagging-docker-images-the-right-way
+* https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
+* https://stackoverflow.com/questions/47714278/why-is-compiling-with-cgo-enabled-0-slower
 
 ## useful commands
 
