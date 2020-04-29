@@ -20,4 +20,7 @@ some common packages required:
 ## CROSS COMPILE
 
 * `export GOOS=windows`
-* `export GOARCH=386`
+* `export GOARCH=amd64`
+
+* https://www.digitalocean.com/community/tutorials/building-go-applications-for-different-operating-systems-and-architectures
+* https://stackoverflow.com/questions/20728767/all-possible-goos-value
