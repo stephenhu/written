@@ -34,4 +34,9 @@
 * https://askubuntu.com/questions/214421/how-to-install-the-mpeg-4-aac-decoder-and-the-h-264-decoder
 * https://www.fossmint.com/conky-for-linux/
 * https://askubuntu.com/questions/1094062/libdvd-pkg-apt-get-check-failed-you-may-have-broken-packages-aborting
-
+* https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-ubuntu-16-04-lts
+* https://fosspost.org/tutorials/things-to-do-after-installing-ubuntu-20-04
+* https://www.unixmen.com/gaming-on-linux1131-19-awesome-opensource-games-for-linux/
+* https://www.unixmen.com/monitoring-install-sensu-ubuntu-16-04-server/
+* https://sensu.io/
+* https://www.ubuntupit.com/best-free-linux-games-everyone-play/

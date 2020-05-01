@@ -25,3 +25,5 @@
 * https://www.lambdatest.com/blog/automated-testing-pipeline-with-gitlab-ci-cd-and-selenium/
 * https://stackoverflow.com/questions/29520905/how-to-create-releases-in-gitlab
 * https://juhani.gitlab.io/go-semrel-gitlab/
+* https://stackoverflow.com/questions/47280922/role-of-docker-in-docker-dind-service-in-gitlab-ci
+* https://docs.gitlab.com/ce/ci/docker/using_docker_build.html#use-docker-in-docker-executor
