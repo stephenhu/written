@@ -43,6 +43,8 @@ sample docker-compose.yml file with traefik
 * https://blog.container-solutions.com/tagging-docker-images-the-right-way
 * https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 * https://stackoverflow.com/questions/47714278/why-is-compiling-with-cgo-enabled-0-slower
+* https://www.how2shout.com/how-to/how-to-install-docker-ce-on-ubuntu-20-04-lts-focal-fossa.html
+* https://linuxhandbook.com/docker-permission-denied/
 
 ## useful commands
 

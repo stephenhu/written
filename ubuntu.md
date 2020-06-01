@@ -4,6 +4,7 @@
 ## commands
 
 * `ubuntu-drivers devices`
+* `sudo alsa force-reload`
 
 ## packages
 
@@ -16,7 +17,7 @@
 ## bluetooth
 
 * `hciconfig hci0`
-* 
+*
 
 ## references
 
@@ -34,9 +35,18 @@
 * https://askubuntu.com/questions/214421/how-to-install-the-mpeg-4-aac-decoder-and-the-h-264-decoder
 * https://www.fossmint.com/conky-for-linux/
 * https://askubuntu.com/questions/1094062/libdvd-pkg-apt-get-check-failed-you-may-have-broken-packages-aborting
+* https://linuxx.info/how-to-find-uuid-of-disk-in-linux/
 * https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-ubuntu-16-04-lts
 * https://fosspost.org/tutorials/things-to-do-after-installing-ubuntu-20-04
 * https://www.unixmen.com/gaming-on-linux1131-19-awesome-opensource-games-for-linux/
 * https://www.unixmen.com/monitoring-install-sensu-ubuntu-16-04-server/
 * https://sensu.io/
 * https://www.ubuntupit.com/best-free-linux-games-everyone-play/
+* https://askubuntu.com/questions/12780/how-to-find-out-what-graphics-card-is-present-in-your-system
+* https://askubuntu.com/questions/481414/install-nvidia-driver-instead-of-nouveau
+* https://askubuntu.com/questions/1220/how-to-restart-x-window-server-from-command-line
+* https://askubuntu.com/questions/62585/how-do-i-set-a-new-xdg-open-setting
+* https://help.ubuntu.com/community/SoundTroubleshooting
+* https://www.maketecheasier.com/fix-no-sound-issue-ubuntu/
+* https://askubuntu.com/questions/1242766/ubuntu-20-04-dummy-output-no-sound-card-in-use
+* https://askubuntu.com/questions/762816/ubuntu-changes-sound-device-after-suspend-how-to-fix/767062#767062
