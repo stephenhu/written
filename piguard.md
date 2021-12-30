@@ -124,3 +124,5 @@ country=CN
 * `https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-routed-wireless-access-point`
 * `https://zhuanlan.zhihu.com/p/163827788`
 * `https://github.com/raspberrypi/firmware/issues/1359`
+* `https://shawnliu.me/post/smart-and-transparent-routing-with-policy-based-routing/`
+* `https://philipdeljanov.com/posts/2019/03/21/setting-up-a-wireguard-vpn/`

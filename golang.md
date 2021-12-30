@@ -2,6 +2,8 @@
 
 since google services are blocked in china, use: `github.com/golang`
 
+https://goproxy.cn/
+
 some common packages required:
 
 1. `github.com/golang/text` # move to work/src/golang.org/x/text
