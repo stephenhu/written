@@ -1,9 +1,13 @@
 # static sites
 
+1. separation of content and view
+1. focus on content, not compilation or learning about templating languages
+1. hosted on any number of static site services like s3, ghp, etc
 1. custom dns
 1. https (letsencrypt or github pages)
 1. github/github pages to store source files (versioning and better management of files)
 1. pugjs templates to make efficient (templates more efficient than html)
+1. should help pull static assets
 
 * https://www.name.com/api-docs/types/searchresult
 * https://www.name.com/api-docs/Domains#CreateDomain
@@ -38,3 +42,16 @@ open issues that need to be sorted out:
 * basically this service becomes a wrapper on top of github pages, will there be any legal issues of doing this?  i think initially if there's little user activity, this probably won't even be a blip on their radar.
 * what is the interface for the web designer, should it be a web admin interface or a cli tool?  i kind of like cli tool since this would be a distributed service, but at the end of the day, there might need to be a centralized api.
 * statically generated sites also provide the ability to cache content for speed and distribution efficiencies, i think in the end, there still needs to be the process of compiling from template to static pages, but this can be abstracted from the user
+* can we remove the need to compile pages ahead of time,  can we just store look and feel info in github as well and have render on the fly?
+
+
+### brainstorm
+
+use github as the storage backend for web pages, js manipulates and renders pages on the fly.
+
+* how can we hide the process of generating files
+
+## references
+
+* https://medium.com/@safeih/how-to-use-letsencrypt-ssl-with-github-pages-with-custom-subdomain-499a51141cf9
+* https://letsencrypt.org/docs/caa/
