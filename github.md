@@ -5,6 +5,10 @@
 * `https://ghcr.io`
 
 
+## github octokit js api
+
+* `https://octokit.github.io/rest.js/v18`
+
 ## github actions
 
 ### steps

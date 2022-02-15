@@ -4,9 +4,19 @@
 
 * `npm install -g typescript`
 
+##  github action
+
+* `npm install @actions/core @actions/github`
+* within `packages.json` add to the `scripts` section:
+```
+"scripts": {
+  "build": "tsc build src/index.ts"
+}
+```
+
 ## useful commands
 
-* `tsc --init`
+* `tsc --init`  # creates tsconfig.json
 
 ## references
 

@@ -5,6 +5,8 @@
 
 docker-compose on linux (included in docker desktop for mac os x)
 
+* https://docs.docker.com/engine/install/ubuntu/
+
 * `wget https://github.com/docker/compose/releases/download/1.25.0/docker-compose-Linux-x86_64`
 * `sudo install docker-compose-Linux-x86_64 /usr/local/bin/docker-compose`
 

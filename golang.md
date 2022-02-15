@@ -27,3 +27,4 @@ some common packages required:
 * https://www.digitalocean.com/community/tutorials/building-go-applications-for-different-operating-systems-and-architectures
 * https://stackoverflow.com/questions/20728767/all-possible-goos-value
 * https://www.digitalocean.com/community/tutorials/customizing-go-binaries-with-build-tags
+* https://stackoverflow.com/questions/22367201/sort-a-map-of-structs-in-golang
