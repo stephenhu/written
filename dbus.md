@@ -5,7 +5,7 @@
 * polkit < 0.106 doesn't understand .rules files (they switched to using javascript syntax).  ubuntu 20.04 has polkit 0.105 by default which uses .pkla and .conf files instead
 * need to add .pkla file to /etc/polkit-1/localauthority/50-local.d
 
-contents of:
+contents of 10-piguard0.pkla:
 ```
 [Allow all without authentication for members of sudo group]
 Identity=unix-user:hu

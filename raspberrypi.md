@@ -226,3 +226,7 @@ there's a nice summary from [digital ocean](https://www.digitalocean.com/communi
 
 several things still need tightening up, the linux distribution still has a lot of unused packages that could be cleaned up, this could 
 save storage space, but also reduce your surface area for attacks.
+
+## references
+
+* https://hackaday.com/2019/07/10/raspberry-pi-4-benchmarks-processor-and-network-performance-makes-it-a-real-desktop-contender/#:~:text=While%20wired%20connections%20are%20always%20better%2C%20the%20Raspberry,20%20and%2030%20Mbps%20in%20the%20same%20environment.

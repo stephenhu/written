@@ -2,7 +2,7 @@
 
 ## setup
 1. `sudo apt-get install resolvconf` # seems this isn't installed by default
-1. `sudo add-apt-repository ppa:wireguard/wireguard`
+1. `sudo add-apt-repository ppa:wireguard/wireguard` # newest ubuntu includes wireguard, no need for this step
 1. `sudo apt-get update`
 1. `sudo apt-get install wireguard`
 1. `sudo modprobe wireguard` # used to invoke kernel module, reboot should also load automatically
@@ -67,6 +67,9 @@ depends on the client, i use the mac os x wireguard gui and android wireguard cl
 * use the vpn server's `public key` in the peer section.
 * use the address:port for the peer section variable `endpoint`
 * use 0.0.0.0/0, ::/0 for `AllowedIPs`
+
+## enable systemctl
+* `sudo systemctl enable wg-quick@wg0`
 
 ### start/stop
 1. `wg-quick up wg0c`  # /etc/wireguard/wg0c.conf

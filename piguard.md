@@ -32,6 +32,8 @@ dnsmasq is used to provide dhcp server capabilities which assigns ip addresses t
 ```
 interface=wlan0
 dhcp-range=192.168.8.2,192.168.8.20,255.255.255.0,24h
+domain=raspberry # local wireless DNS domain
+address=/piguard.raspberry
 ```
 
 1.  `sudo vi /etc/dhcpcd.conf`
@@ -51,11 +53,15 @@ interface wlan0
 net.ipv4.ip_forward=1
 ```
 
+`on the latest jan 22 2022 release of raspbian, the file is /etc/sysctl.d/99-sysctl.conf`
+
 
 ### hostapd
 
 1.  `sudo apt-get install hostapd`
 1.  `sudo vi /etc/hostapd/hostapd.conf`
+1.  `sudo systemctl unmask hostapd`
+1.  `sudo systemctl enable hostapd`
 
 ```
 country_code=CN
@@ -91,6 +97,7 @@ country=CN
 1. `sudo iptables -A FORWARD -i wg0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT`
 1. `sudo iptables -A FORWARD -i wlan0 -o wg0 -j ACCEPT`
 1. `sudo netfilter-persistent save`
+1. `sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE` # use this if you don't need wireguard
 
 ### wireguard
 
