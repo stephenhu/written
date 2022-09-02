@@ -16,7 +16,7 @@ some common packages required:
 1. `go build # this will create go.mod/go.sum entries`
 1. `go list -m all`
 1. `go list -m -versions <mod/name>`
-1. `go mod tiny`
+1. `go mod tidy`
 
 
 ## CROSS COMPILE
@@ -24,7 +24,15 @@ some common packages required:
 * `export GOOS=windows`
 * `export GOARCH=amd64`
 
+## tests
+
+* `go test -run TestNbaGetBoxscores` # run single test
+* `t.Skip()` # skip test
+
 * https://www.digitalocean.com/community/tutorials/building-go-applications-for-different-operating-systems-and-architectures
 * https://stackoverflow.com/questions/20728767/all-possible-goos-value
 * https://www.digitalocean.com/community/tutorials/customizing-go-binaries-with-build-tags
 * https://stackoverflow.com/questions/22367201/sort-a-map-of-structs-in-golang
+* https://awesome-go.com/
+* https://www.x-cellent.com/blog/cgo-bindings/
+* https://thedeveloperblog.com/split-go

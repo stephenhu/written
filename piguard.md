@@ -81,7 +81,13 @@ wpa_pairwise=CCMP
 
 ```
 
+### rfkill
+
+`sudo rfkill unblock wifi`
+
 ### country code
+
+__this is unneeded, but left here for legacy purposes__
 
 1.  add these 3 lines to `/etc/wpa_supplicant/wpa_supplicant.conf`
 
@@ -96,8 +102,8 @@ country=CN
 1. `sudo iptables -t nat -A POSTROUTING -o wg0 -j MASQUERADE`
 1. `sudo iptables -A FORWARD -i wg0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT`
 1. `sudo iptables -A FORWARD -i wlan0 -o wg0 -j ACCEPT`
-1. `sudo netfilter-persistent save`
 1. `sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE` # use this if you don't need wireguard
+1. `sudo netfilter-persistent save`
 
 ### wireguard
 

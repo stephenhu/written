@@ -103,3 +103,5 @@ _DO NOT USE THESE COMMANDS FOR NOW, I DON'T THINK THESE ARE THE RIGHT COMMANDS, 
 * https://www.cyberciti.biz/faq/ubuntu-20-04-set-up-wireguard-vpn-server/
 * https://websiteforstudents.com/how-to-install-wireguard-vpn-server-on-ubuntu-18-04-20-04/
 * https://github.com/StreisandEffect/streisand/issues/1434
+* https://jawher.me/wireguard-ansible-systemd-ubuntu/
+* https://openwrt.org/docs/guide-user/services/vpn/wireguard/automated

@@ -1,6 +1,9 @@
 # ubuntu
 
 
+## adding an apt repository
+
+1.  download gpg key ``
 ## commands
 
 * `ubuntu-drivers devices`
@@ -50,3 +53,4 @@
 * https://www.maketecheasier.com/fix-no-sound-issue-ubuntu/
 * https://askubuntu.com/questions/1242766/ubuntu-20-04-dummy-output-no-sound-card-in-use
 * https://askubuntu.com/questions/762816/ubuntu-changes-sound-device-after-suspend-how-to-fix/767062#767062
+* https://askubuntu.com/questions/390769/how-do-i-resize-partitions-using-command-line-without-using-a-gui-on-a-server
