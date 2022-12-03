@@ -1,0 +1,3 @@
+# metaverse
+
+the metaverse in its most rudimentary form is an alternate digital universe.  in this universe people can interact similarly to how they would in the real world.  the metaverse concept is not that foreign and has been around since the start of the internet.  take shopping as an example, it used to be that customers would go to a physical store to purchase goods, now they can purchase goods online and have them delivered to their homes.  the experiences were meant to mimic the physical shopping experience by leveraging senses like visuals with pictures of products, later on video which would not only leverage visuals, but audio.  video games are another example of an alternate digital universe,  one where users could fly

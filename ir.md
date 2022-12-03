@@ -44,3 +44,4 @@ dtoverlay=gpio-ir-tx,gpio_pin=18
 * http://www.technoblogy.com/show?24A9
 * https://www.mess.org/2019/09/03/Support-for-keymap-with-raw-IR-and-sending-key-from-keymap/
 * https://forum.libreelec.tv/thread/12111-kernel-module-gpio-ir-sending-ir-codes/
+* https://www.etechnophiles.com/raspberry-pi-4-gpio-pinout-specifications-and-schematic/
