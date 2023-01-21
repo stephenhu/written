@@ -19,3 +19,4 @@
 * https://webpack.js.org/configuration/output/
 * https://melvingeorge.me/blog/do-multiple-fetch-requests-parallel-javascript
 * https://mikebifulco.com/posts/solve-all-your-problems-with-promise-allsettled
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
