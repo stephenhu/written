@@ -20,3 +20,7 @@
 * https://melvingeorge.me/blog/do-multiple-fetch-requests-parallel-javascript
 * https://mikebifulco.com/posts/solve-all-your-problems-with-promise-allsettled
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+* https://learn.microsoft.com/en-us/sharepoint/dev/solution-guidance/javascript-patterns-and-performance
+* https://melvingeorge.me/blog/wait-for-all-promises-to-resolve-javascript
+* https://appdividend.com/2022/03/08/javascript-promise-all/
+* https://medium.com/@chrisamori/using-promise-all-to-handle-multiple-asynchronous-events-b652c48c9400
