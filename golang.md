@@ -37,3 +37,4 @@ some common packages required:
 * https://www.x-cellent.com/blog/cgo-bindings/
 * https://thedeveloperblog.com/split-go
 * https://www.digitalocean.com/community/tutorials/how-to-use-struct-tags-in-go
+* https://gosamples.dev/date-time-format-cheatsheet/

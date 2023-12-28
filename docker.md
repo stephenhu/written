@@ -85,7 +85,9 @@ sample docker-compose.yml file with traefik
 * `docker load -i image.tar`
 
 
+## multi-platform build
 
+* https://docs.docker.com/build/guide/multi-platform/#:~:text=To%20build%20the%20app%20using%20the%20cross-compilation%20technique%2C,to%20the%20values%20of%20TARGETOS%20and%20TARGETARCH.%20
 
 
 ## references

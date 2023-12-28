@@ -1,5 +1,10 @@
 # github
 
+## tagging
+
+* `git tag v0.0.1`
+* `git push origin v0.0.1`
+
 ## docker registry
 
 * `https://ghcr.io`
@@ -10,6 +15,11 @@
 * `https://octokit.github.io/rest.js/v18`
 
 ## github actions
+
+_must make package for container public, by default it is private_
+
+* https://github.com/actions
+* `docker inspect ghcr.io/stephenhu/nbac`
 
 ### steps
 
@@ -31,6 +41,12 @@ this is github's very own container repository, not docker's.  you need to creat
 
 * dns a record for 185.199.108.153 - 185.199.111.153
 
+## schedule action
+
+* `https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07`
+* `https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#about-yaml-syntax-for-workflows`
+* `https://github.com/marketplace/actions/add-commit`
+
 ## references
 
 
@@ -49,3 +65,4 @@ this is github's very own container repository, not docker's.  you need to creat
 * https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility
 * https://github.com/stephenhu?tab=packages
 * https://docs.github.com/en/packages/learn-github-packages/connecting-a-repository-to-a-package
+* https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
