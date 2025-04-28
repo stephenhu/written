@@ -42,8 +42,17 @@ nba since legalizing gambling has stopped providing public api's for their stati
 ### resources
 
 * https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg
+* https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png
+* https://www.nba.com/player/2544/lebron-james
+* https://sportsfancovers.com/nba-team-colors/
 
 ### legacy
 
 * https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/league/00_full_schedule_week_tbds.json
 * http://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/league/00_full_schedule.json
+* https://data.nba.net/10s/prod/v1/2022-01-02/scoreboard.json
+* https://data.nba.net/data/10s/prod/v1/2022/schedule.json
+* http://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2020/league/00_full_schedule.json
+
+* https://github.com/jaebradley/nba_data/issues/61
+* https://github.com/kshvmdn/nba.js/blob/master/docs/api/DATA.md

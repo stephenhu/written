@@ -38,3 +38,4 @@ some common packages required:
 * https://thedeveloperblog.com/split-go
 * https://www.digitalocean.com/community/tutorials/how-to-use-struct-tags-in-go
 * https://gosamples.dev/date-time-format-cheatsheet/
+* https://ieftimov.com/posts/golang-datastructures-trees/

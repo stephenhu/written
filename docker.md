@@ -95,3 +95,5 @@ sample docker-compose.yml file with traefik
 
 * https://docs.docker.com/install/linux/docker-ce/ubuntu/
 * https://rancher.com/docs/rancher/v2.x/en/quick-start-guide/deployment/quickstart-manual-setup/
+* https://www.howtogeek.com/devops/how-to-handle-timezones-in-docker-containers/
+* https://cronitor.io/guides/running-cron-jobs-inside-a-docker-container

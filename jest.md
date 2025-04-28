@@ -8,3 +8,4 @@
 ## references
 
 * https://jestjs.io/docs/getting-started
+* https://jestjs.io/docs/using-matchers

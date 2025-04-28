@@ -15,3 +15,4 @@
 https://github.com/containous/traefik/issues/4688
 * https://docs.traefik.io/v2.0/routing/overview/
 * https://stackoverflow.com/questions/58356714/how-to-redirect-http-to-https-with-traefik-2-0-and-docker-compose-labels
+* https://gerov.eu/posts/traefik-for-podman/
